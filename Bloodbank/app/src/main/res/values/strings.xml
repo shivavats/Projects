@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Blood bank</string>
+    <string name="text">Your Details will be public to the community, by using this app you also need to pledge to be a donor to help those who are in need.</string>
+    <string name="sign_up"><u>Register</u></string>
+</resources>

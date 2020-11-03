@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activities.RegisterActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@android:dimen/app_icon_size"
+            android:textColor="@android:color/black"
+            android:text="@string/text"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/name"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:hint="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_margin="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/number"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:hint="phone Number"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_margin="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/password"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:text="Become a Donor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>
